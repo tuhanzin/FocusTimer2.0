@@ -1,0 +1,89 @@
+.toggle{
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: hsla(0, 0%, 100%, 1);
+  --tt-color: hsla(240, 6%, 21%, 1);
+  --card-color: hsla(240, 9%, 89%, 1);
+  --focus-color: hsla(194, 97%, 31%, 1);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+body {
+  font-size: 1.6rem;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  gap: 15rem;
+  align-items: center;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel span {
+  font-family: sans-serif;
+  font-weight: 700;
+  color: var(--tt-color);
+  font-size: 12.6rem;
+}
+
+.panel .controls {
+  display: flex;
+  gap: 4rem;
+}
+
+.panel button {
+  background: none;
+  border: none;
+  font-size: 4.8rem;
+  opacity: .8;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+.music-grid button {
+  padding: 4.5rem;
+  font-size: 3rem;
+
+  background-color: var(--card-color);
+  border: 0;
+  border-radius: 24px;
+}
+
+.music-grid .music-on {
+  color: white;
+  background-color: var(--focus-color);
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTimer 2.0</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="./main.js" defer></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <main>
+
+    <div class="panel">
+  
+      <div class="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="controls">
+        <button
+          data-action="toggleRun"
+          id="playbtn" class="ph-bold ph-play-circle">
+        </button>
+        <button
+          data-action="toggleRun"
+          id="pausebtn" class="ph-bold ph-pause-circle toggle">
+        </button>
+        <button
+          data-action="reset"
+          id="resetbtn" class="ph-bold ph-stop-circle">
+        </button>
+        <button 
+          data-action="sum"
+          id="sumbtn" class="ph-bold ph-plus-circle">
+        </button>
+        <button 
+          data-action="sub"
+          id="subbtn" class="ph-bold ph-minus-circle">
+        </button>
+      </div>
+  
+    </div>
+  
+    <div class="music-grid">
+      <button
+        id="forest"
+        class="ph-bold ph-tree "></button>
+      <button
+        id="rain"
+        class="ph-bold ph-cloud-rain "></button>
+      <button
+        id="store"
+        class="ph-bold ph-storefront "></button>
+      <button
+        id="campfire"
+        class="ph-bold ph-fire "></button>
+    </div>
+
+  </main>
+</body>
+</html>
